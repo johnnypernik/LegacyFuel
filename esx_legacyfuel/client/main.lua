@@ -515,22 +515,19 @@ function DisplayHud()
 		if fuel == 0 then
 			fuel = "0"
 		end
+
 		if kmh == 0 then
 			kmh = "0"
-		end
-		if mph == 0 then
-			mph = "0"
 		end
 
 		x = 0.01135
 		y = 0.002
 
-		DrawAdvancedText(0.2195 - x, 0.77 - y, 0.005, 0.0028, 0.6, fuel, 255, 255, 255, 255, 6, 1)
+		DrawAdvancedText(0.174 - x, 0.915 - y, 0.148, 0.0028, 0.6, fuel, 255, 255, 255, 255, 6, 1)
 
-		DrawAdvancedText(0.130 - x, 0.77 - y, 0.005, 0.0028, 0.6, mph, 255, 255, 255, 255, 6, 1)
-		DrawAdvancedText(0.174 - x, 0.77 - y, 0.005, 0.0028, 0.6, kmh, 255, 255, 255, 255, 6, 1)
+		DrawAdvancedText(0.130 - x, 0.915 - y, 0.152, 0.0028, 0.6, kmh, 255, 255, 255, 255, 6, 1)
 
-		DrawAdvancedText(0.148 - x, 0.7765 - y, 0.005, 0.0028, 0.4, "mp/h              km/h              Fuel", 255, 255, 255, 255, 6, 1)
+		DrawAdvancedText(0.150 - x, 0.925 - y, 0.150, 0.0028, 0.3, "Km/h                      Fuel", 255, 255, 255, 255, 6, 1)
 	end
 end
 
